@@ -1,0 +1,19 @@
+{
+  "name": "pembokat-skaiblok",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cimbraien/pembokat-skaiblok.git"
+  },
+  "author": "cimbraien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cimbraien/pembokat-skaiblok/issues"
+  },
+  "homepage": "https://github.com/cimbraien/pembokat-skaiblok#readme"
+}
