@@ -1,6 +1,6 @@
 import { MessageEmbed } from "discord.js";
 import { PlayerStatus } from "../services/login_status_service";
-//🟢 🔴
+
 export const LoginStatusEmbed = (
   playersStatus: Array<PlayerStatus>,
 ): MessageEmbed => {
@@ -16,7 +16,8 @@ export const LoginStatusEmbed = (
 
   const message = new MessageEmbed()
     .setColor("RED")
-    .setTitle("Hypixel Player Online Status");
+    .setTitle("Hypixel Player Online Status")
+		.setTimestamp();
   message.addField("🟢", online);
   message.addField("🔴", offline);
   return message;

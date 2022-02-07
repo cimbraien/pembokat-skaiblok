@@ -1,5 +1,5 @@
-import axios, { AxiosError } from "axios";
-import { Client, Message, TextChannel } from "discord.js";
+import axios from "axios";
+import { Message, TextChannel } from "discord.js";
 import EventEmitter from "events";
 import { config } from "../config";
 import { LoginStatusEmbed } from "../embeds/login_status_embed";
@@ -19,7 +19,7 @@ export class LoginStatusService {
   private loginStatusEvent: EventEmitter;
   private message: Message;
 
-  constructor(private client: Client, private channel: TextChannel) {
+  constructor(private channel: TextChannel) {
     this.loginStatusEvent = new EventEmitter();
     this.init();
   }
