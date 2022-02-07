@@ -72,7 +72,7 @@ export class LoginStatusService {
       const p = this.playersStatus[i];
       const isOnline = await this.getOnlineStatus(p);
       if (p.online == isOnline) continue;
-      changed = isOnline;
+      changed = true;
       p.online = isOnline;
     }
     if (changed) this.loginStatusEvent.emit("statusChange");
